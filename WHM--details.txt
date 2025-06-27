@@ -1,0 +1,165 @@
+
+---------------- old WHM ----------------------
+WHM = https://103.107.67.102:2087/
+user = root
+pass = sFBhZ$&7!5EC
+
+------- DB for api and dashboard -------
+db: zipmartnow_dashboard_db
+user: zipmartnow_dashboard_user
+pass: 8wHV?mnVzFcO
+
+
+
+
+
+
+
+
+------ Testing server WHM details : -----------------
+URL : https://103.25.130.3:2087
+Username : root
+Password : skNj@2udgT2#dU3j$a4Tw
+
+
+
+
+---------- account register for zipmartnow.com on new server this is cPanel ------------
+domain: zipmartnow.com
+Username: zipmartnow
+password: bU#*~22I48TA
+email: info.zipmartnow@gmail.com
+
+--- DB for zipmartnow.com ---
+	db: zipmartnow_db
+	user: zipmartnow_root
+	pass: BcoD#pFjkq9t
+
+---sub-domain from zipmartnow.com domain ---
+	domain: dashboard.zipmartnow.com
+	domain: api.zipmartnow.com
+	--- db ---
+	User: zipmartnow_dashboard
+	Database: zipmartnow_dashboard_db
+	pass: L1H=dP,HmKE4
+
+	---- Admin details of zipmartnow.com ----
+	Admin: Abhishek
+	email: info.zipmartnow@gmail.com
+	phone: 9717286066
+	pass: admin@123
+
+
+
+https://dashboard.zipmartnow.com
+admin------------------------------------
+	name: Seospay
+	mob: 7366857413
+	pass: admin@ok123
+	L-pin: 86311708
+	T-pin: 309855
+sub-admin--------------------------------
+	mob: 8855221133
+	pass: sub@admin123
+	L-pin: 45372803
+	T-pin: 231423
+user-------------------------------------
+	name: dinesh
+	email: rahulkumardubey123@gmail.com
+	mob: 8421528956
+	pass: dinesh@956
+	AuthKey: 8a9b6adfeae8
+	AuthToken: c0fb40cf0a7ed96a094020746f88b8755c0749f6
+	authCode: okey@123test
+
+Testing user-------------------------------------
+	name: Testing user
+	email: deepak19970503@gmail.com
+	mob: 9315646009
+	pass: testing@123
+	AuthKey: 02a107c42e81
+	AuthToken: 9941ed131486a1b08688dcc8ff4304151360918e
+	authCode: testing@123
+
+	api--for--generateToken-----------------
+	route: new/generateToken
+	header:
+		AuthKey: 02a107c42e81
+		AuthToken: 9941ed131486a1b08688dcc8ff4304151360918e
+	form:
+		email: rahulkumardubey123@gmail.com
+		pass: dinesh@956
+
+
+user Raj-------------------------------------
+	name: Shyam
+	email: raj@gmail.com
+	mob: 9059594828
+	pass: raj@123@
+	AuthKey: 87b845812dd4
+	AuthToken: 4448dbed47dd09c5e165c435de2e58c350c65a49
+	authCode: #raj@123#
+
+user Chintu-------------------------------------
+	name: Chintu
+	email: saitraders1296@gmail.com
+	mob: 9728038167
+	pass: chintu@123ch
+	AuthKey: 8106c6539c77
+	AuthToken: 3d1796e51215fbf217b359fd095f5a6d2762850b
+	authCode: G23SH290KL
+
+	
+Staff Poonam-------------------------------------
+	name: Pooname
+	email: poonamjaiswal0931@gmail.com
+	mob: 8076780931
+	pass: @pooname123
+	l_pin: 56758069
+	t_pin: 622672
+        
+Staff Shivani-------------------------------------
+	name: Shivani
+	email: shivanigiri025@gmail. com
+	mob: 9310393883
+	pass: shivani@4321
+	l_pin: 22673137
+	t_pin: 799220
+	
+
+
+
+user panel------
+webhook/callback url
+
+
+
+
+
+
+----------------------------- Server CMD -------------------------------
+cd / (going to outside)
+ls (for check directory)
+cd home
+cd zipmartnow
+cd public_html
+cd api.zipmartnow.com
+php artisan passport:client --personal
+
+
+
+
+
+
+
+user------------------------------------
+	Praveen( SKVB INTERNATIONAL IMPORT EXPORT PRIVATE LIMITED )
+	email: flippayservice@gmail.com
+	MOB: 8421528956
+	pass: ikvb@123
+
+
+-------------- rushbasket.in ---------
+domain: https://rushbasket.in/
+email: shikuldigitalservices@gmail.com
+

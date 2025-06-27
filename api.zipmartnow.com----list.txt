@@ -1,0 +1,87 @@
+1. Login API--------------------------------
+Parh = "https://api.zipmartnow.com/api/login/g1/user"
+Method: Post
+Request
+	body/form-data
+		mobile:"8********90"
+		password:"abc2324"
+Response
+	"token":"eyJ0****************lsVrao"
+
+
+2. Token Generate API--------------------------------
+Path = "https://api.zipmartnow.com/api/new/generateToken"
+Request
+	Headers
+		"AuthKey":"8a*******e8"
+		"AuthToken":"c0fb***********749f6"
+	body/form-data
+		"email":"abc@gmail.com"
+		"password":"abc2324"
+Response
+	"token": "eyJ0e*****************SlsVrao"
+
+
+3. Payout transaction API--------------------------------
+Path = "https://api.zipmartnow.com/api/new/v1/payout/docashtransfer"
+Method: Post
+Request
+	Authorization(bearer token): 
+		Token: "eyJ0e*****************SlsVrao"
+	headers
+		"AuthenticatedKeyId":"8a********ae8"
+		"AuthenticatedToken":"c0fb*************749f6"
+		"AuthenticatedCode":"12****ing"
+	body/form-data(Request for IMPS)
+		"name":"ABC"
+		"mobileNumber":"9********09"
+		"referenceNumber":"as2s2**********s34e3"
+		"transferMode":"IMPS"
+		"transferAmount":"1"
+		"accountNumber":"5**********5"
+		"bankIfsc":"A*******23243"
+		"beneBankName":"Abc Bank"
+Response
+	"status":"SUCCESS"
+        "message":"Transaction is Successful"
+        "data": {
+                    "payout_ref":"as2s2**********s34e3"
+                    "txn_id":"ZMRT23*********2324
+                    "bank_ref":"234********344"
+                }
+
+
+4. Check Payout status API--------------------------------
+Path = "https://api.zipmartnow.com/api/new/checkstatus"
+Method: Post
+Request
+	headers
+		"Authorization":"91ed*************18e" (Your authorization key)
+	body/form-data
+		"referenceNumber":"200117101882" (Pass your Payout Order-id)
+Response
+	"status": "Success",
+    	"message": "Transaction is Success",
+    	"data": {
+        	    "payout_ref": "20*******82"
+        	    "txnId": "ZMRT*********07"
+        	    "bank_ref": "51*******4"
+    		}
+	
+
+5. Check Balance API--------------------------------
+Path = "https://api.zipmartnow.com/api/user/checkbalance"
+Method: Post
+Request
+	Authorization(bearer token): 
+		Token: "eyJ0e*****************SlsVrao"
+	headers
+		"AuthKey":"02********e81"
+		"AuthToken":"99***************8e"
+	body/form-data(Request for IMPS)
+		"email":"abc@gmail.com"
+		"password":"abc2324"
+Response
+	"name": "deepak"
+    	"balance": 23223
+

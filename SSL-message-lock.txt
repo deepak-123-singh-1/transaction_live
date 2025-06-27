@@ -1,0 +1,10 @@
+1. data lock with public key = open by private key
+2. data lock with private key = open by public key
+
+
+ex - 1st user write "hello" message and lock by public key then message send to 2nd user,
+     2nd user red message by self private key === not secure
+
+
+secure = 1st user message lock by "2nd user public key" and "1st user privat key" then message send
+	 2nd use unlock by "1st user public key" and "2nd user self private key"
